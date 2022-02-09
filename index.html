@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amore Mall</title>
+</head>
+<!-- 제이쿼리 자리 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+<!-- 외부 제이쿼리 & 외부 css & 웹폰트  & 폰트어썸 st-->
+<!--슬릭 슬라이드-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--슬릭 테마-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--슬릭 css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--폰트 어썸& FIGMA 폰트-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<!-- 외부 제이쿼리 & 외부 css & 웹폰트  & 폰트어썸 en-->
+<!-- 내가 만든 css / js 는 맨 아래에 있어야 한다. -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/motion.js"></script>
+<body>
+<!--html 시작-->
+<!--공지사항 시작-->
+<div class="notice-box">
+    <div class="notice-txt">공지사항</div>
+    <div class="notice-cnt">
+        <a href="#">22년 2월 무이자할부 혜택 안내</a>
+        <a href="#">[AMORE MALL LIVE]찐팬 라이브 "내가 하면 잘판텐데" 3/4기 당첨자 발표</a>
+        <a href="#">[한율]힘찬콩 탄력 크림 체험단 우수후기자 발표</a>
+    </div>
+    <div class="notice-view"><a href="#">+ 더보기</a> </div>
+    <div class="notice-close"><a href="#"><span class="iconify" data-icon="bi:x-lg" style="color: white;"></span></a>
+        
+    </div>
+</div>
+<!--공지사항 끝-->
+<!--top-bar 시작-->
+<div class="top-bar-wrap row con">
+    <div class="logo-box">
+      <div class="logo">
+        <a href="/kr/ko/main" ap-click-area="GNB" ap-click-name="홈">AMORE MALL</a>
+      </div>
+    </div>
+<!--top-menu 시작-->
+    <div class="top-menu-1 con">
+        <ul class="row">
+            <li class="cell"><a href="#">전체 메뉴</a>
+                <div class="top-menu-2-a">
+              <ul>
+                <li><a href="#">스킨케어</a></li>
+                <li><a href="#">메이크업</a></li>
+                <li><a href="#">향수</a></li>
+                <li><a href="#">생활용품</a></li>
+                <li><a href="#">소품&도구</a></li>
+                <li><a href="#">뷰티푸드</a></li>
+                <li><a href="#">남성</a></li>
+                <li><a href="#">베이비</a></li>
+                <li><a href="#">선물추천</a></li>
+              </ul>
+               </div>
+            </li>
+            <li class="cell"><a href="#">BEST</a>
+            </li>
+            <li class="cell"><a href="#">설날선물</a>
+            </li>
+            <li class="cell"><a href="#">브랜드</a>
+                <div class="top-menu-2-b">
+                    <div class="veiw-box"><a href="#">브랜드 전체보기</a></div>      
+                     <ul class="row">
+                     <li class="cell">
+                       <a href="#">아모레퍼시픽 브랜드</a>
+                       <ul>
+                         <li><a href="#">구딸파리</a></li>
+                         <li><a href="#">꿀톤</a></li>
+                         <li><a href="#">댄트롤</a></li>
+                         <li><a href="#">동의본초</a></li>
+                         <li><a href="#">라네즈</a></li>
+                         <li><a href="#">라보에이치</a></li>
+                         <li><a href="#">레어카인드</a></li>
+                         <li><a href="#">려</a></li>
+                         <li><a href="#">리리코스</a></li>
+                         <li><a href="#">리리코스 마린에너지</a></li>
+                         <li><a href="#">마몽드</a></li>
+                         <li><a href="#">메디안</a></li>
+                         <li><a href="#">메이크온</a></li>
+                         <li><a href="#">미래파</a></li>
+                         <li><a href="#">미쟝센</a></li>
+                         <li><a href="#">바이탈뷰티</a></li>
+                         <li><a href="#">브로앤팁스</a></li>
+                         <li><a href="#">설화수</a></li>
+                         <li><a href="#">스테디</a></li>
+                         <li><a href="#">아모레퍼시픽</a></li>
+                         <li><a href="#">아웃런</a></li>
+                         <li><a href="#">아이오페</a></li>
+                         <li><a href="#">오딧세이</a></li>
+                         <li><a href="#">이지피지</a></li>
+                         <li><a href="#">일리윤</a></li>
+                         <li><a href="#">큐브미</a></li>
+                         <li><a href="#">프라도어</a></li>
+                         <li><a href="#">프레시팝</a></li>
+                         <li><a href="#">프리메라</a></li>
+                         <li><a href="#">플레시아</a></li>
+                         <li><a href="#">한율</a></li>
+                         <li><a href="#">해피바스</a></li>
+                         <li><a href="#">헤라</a></li>
+                       </ul>
+                     </li>
+                     <li class="cell">
+                      <a href="#">입점 브랜드</a>
+                       <ul>
+                         <li><a href="#">데싱디바</a></li>
+                         <li><a href="#">라포티셀</a></li>
+                         <li><a href="#">머지</a></li>
+                         <li><a href="#">맥스팩터</a></li>
+                         <li><a href="#">미팩토리</a></li>
+                         <li><a href="#">밀리마쥬</a></li>
+                         <li><a href="#">바디홀릭</a></li>
+                         <li><a href="#">부르조아</a></li>
+                         <li><a href="#">아윤채</a></li>
+                         <li><a href="#">오킵스</a></li>
+                         <li><a href="#">에뛰드</a></li>
+                         <li><a href="#">에스쁘아</a></li>
+                         <li><a href="#">에스트라</a></li>
+                         <li><a href="#">이니스프리</a></li>
+                         <li><a href="#">샬랑드파리</a></li>
+                         <li><a href="#">세잔느</a></li>
+                         <li><a href="#">스틸라</a></li>
+                         <li><a href="#">캔메이크</a></li>
+                         <li><a href="#">케이트</a></li>
+                         <li><a href="#">PUPA(뿌빠)</a></li>
+                         <li><a href="#">프라다퍼퓸</a></li>
+                         <li><a href="#">프로에잇청담</a></li>
+                         <li><a href="#">피카소</a></li>
+                         <li><a href="#">해서린</a></li>
+                         <li><a href="#">BCL(사보리노)</a></li>
+                         <li><a href="#">CEO 보떼</a></li>
+                       </ul>
+                     </li>
+                   </ul>
+                 </div>
+            </li>
+            <li class="cell"><a href="#">이벤트</a>
+                <div class="top-menu-2-a">
+                   <ul class="row">
+                     <li><a href="#">진행중인 이벤트</a></li>
+                     <li><a href="#">On Sale</a></li>
+                     <li><a href="#">쿠폰존</a></li>
+                     <li><a href="#">VIP 라운지</a></li>
+                     <li><a href="#">카드혜택</a></li>
+                     <li><a href="#">출석체크</a></li>
+                   </ul>
+               </div>
+            </li>
+        </ul>    
+    </div>
+<!--top-menu 끝-->
+
+<!-- 아이콘 시작-->
+<div class="icon-box cell-r">
+    <a href="#"><span class="iconify" data-icon="bytesize:search" style="color: #2c2c2c;"></span></a>
+    <a href="#"><span class="iconify" data-icon="akar-icons:person" style="color: #2c2c2c;"></span></a>
+    <a href="#"><span class="iconify" data-icon="bi:bag-check" style="color: #2c2c2c;"></span></a>
+    <a href="#"><span class="iconify" data-icon="bytesize:heart" style="color: #2c2c2c;"></span></a>
+  </div>
+<!-- 아이콘 끝-->
+
+</div>
+<!--top-bar 끝-->
+
+<!-- gnd 시작 -->
+<div class="slider con">
+    <div class="content"><img src="./img/gnb/20220118_rouge-holic-sheer-matte_mainKV_pc.jpg" alt="배너1"></div>
+    <div class="content"><img src="./img/gnb/20211130_sensual-powder-matte_mainKV_pc.jpg" alt="배너2"></div>
+    <div class="content"><img src="./img/gnb/20220118_rouge-holic-sheer-matte_mainKV_pc.jpg" alt="배너3"></div>
+    <div class="content"><img src="./img/gnb/20220118_rouge-holic-sheer-matte_mainKV_pc.jpg" alt="배너3"></div>
+ <div class="btn-wrap">
+     <div class="btn btn01"></div>
+     <div class="btn btn01"></div>
+     <div class="btn btn01"></div>
+     <div class="btn btn01"></div>
+     <div class="btn btn01"></div>
+     <div class="btn btn01"></div>
+ </div>
+</div>
+
+
+
+
+<!-- gnd 끝 -->
+
+</body>
+</html>
