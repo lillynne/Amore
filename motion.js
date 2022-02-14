@@ -1,20 +1,31 @@
 $(document).ready(function(){
-    $(".slider").on("init" , function(event , slick){
-        $(".slider .content").eq(1).addClass("active");
+
+    $(".slider").slick({
+        autoplay: true ,
+        autoplaySpeed: 2000 ,
+        slidesToShow: 1 ,
+        slidesToScroll: 1, 
+        speed: 1500 ,
+        prevArrow:$(".arrow-left") ,
+        nextArrow:$(".arrow-right") ,
+
+
+
+    });
+
+    $(".play").click(function(){
+    
+        $(".play").removeClass("active");
+        $(".pause").addClass("active");
+        $(".slider").slick('slickPlay')
+        
       });
-
-    $(".silder").slick({
-      autoplay: true ,
-      autoplaySpeed: 2000 ,
-      slidesToShow: 1 ,
-      slidesToScroll: 1, 
-      speed: 1500 ,
-      prevArrow: $(".arrow-left") ,
-      nextArrow: $(".arrow-right") ,
-      customPaging: function(slide , i){
-        var now_slide = $(slide.$slides[i]).attr("data-nav-txt");
-        console.log(now_slide);
-        return now_slide;
-      } ,
-
-     });
+      
+      $(".pause").click(function(){
+        
+        $(".pause").removeClass("active");
+        $(".play").addClass("active");
+        $(".slider").slick('slickPause');
+        
+      });
+});

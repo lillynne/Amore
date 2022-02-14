@@ -259,17 +259,29 @@
 
   /* gnb 시작 */
 .slider{
-    background-color: #ddd;
+    max-width: 1920px;
+    margin: 0;
 }
 
-.silder .content{
-    position: relative;
+.slider .content{
+  position: relative;
 }
 
 .slider .content > img{
     width: 100%;
 }
 
+.slider > .btn-arrow{
+  position:absolute;
+  left:50%;
+  bottom:15px;
+  transform: translate(-50%, -50%);
+  
+}
+.btn05{
+  width: 30px;
+  height: 30px;
+}
 
 
 
