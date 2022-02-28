@@ -1,31 +1,36 @@
-$(document).ready(function(){
+function BannerSlideInit() {
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay:3000,
+      disableOnInteraction:false
+    },
 
-    $(".slider").slick({
-        autoplay: true ,
-        autoplaySpeed: 2000 ,
-        slidesToShow: 1 ,
-        slidesToScroll: 1, 
-        speed: 1500 ,
-        prevArrow:$(".arrow-left") ,
-        nextArrow:$(".arrow-right") ,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: 'true',
+    },
 
+    navigation: {
+      nextEl: '.my-button-next',
+      prevEl: '.my-button-prev',
+    },
+  });
 
+  $(".swiper-btn-box > .play").click(function() {
+    if ($(".swiper-btn-box > .play").hasClass("active")) {
+      $(".swiper-btn-box > .play").removeClass("active");
+      $(".swiper-btn-box > .pause").addClass("active");
+      swiper.autoplay.stop();
+    }
 
-    });
+  });
 
-    $(".play").click(function(){
-    
-        $(".play").removeClass("active");
-        $(".pause").addClass("active");
-        $(".slider").slick('slickPlay')
-        
-      });
-      
-      $(".pause").click(function(){
-        
-        $(".pause").removeClass("active");
-        $(".play").addClass("active");
-        $(".slider").slick('slickPause');
-        
-      });
-});
+  $(".swiper-btn-box > .pause").click(function() {
+    if ($(".swiper-btn-box > .pause").hasClass("active")) {
+      $(".swiper-btn-box > .pause").removeClass("active");
+      $(".swiper-btn-box > .play").addClass("active");
+      swiper.autoplay.start();
+    }
+  });
+}

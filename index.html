@@ -9,12 +9,11 @@
 <!-- 제이쿼리 자리 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
 <!-- 외부 제이쿼리 & 외부 css & 웹폰트  & 폰트어썸 st-->
-<!--슬릭 슬라이드-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!--슬릭 테마-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--슬릭 css-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--스와이퍼 슬라이드-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<!--스와이퍼 테마-->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 <!--폰트 어썸& FIGMA 폰트-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -43,7 +42,7 @@
 <div class="top-bar-wrap row con">
     <div class="cell logo-box">
       <div class="logo">
-        <a href="/kr/ko/main" ap-click-area="GNB" ap-click-name="홈">AMORE MALL</a>
+        <img src="./img/h1_logo.svg" alt=""><a href="#"></a>
       </div>
     </div>
 <!--top-menu 시작-->
@@ -165,32 +164,288 @@
 </div>
 <!--top-bar 끝-->
 
-<!-- gnd 시작 -->
-<div class="slider">
-    <div class="content"><img src="./img/gnb/20220118_rouge-holic-sheer-matte_mainKV_pc.jpg" alt="배너1"></div>
-    <div class="content"><img src="./img/gnb/20211130_sensual-powder-matte_mainKV_pc.jpg" alt="배너2"></div>
-    <div class="content"><img src="./img/gnb/20210813_new_main_KV_04_pc.jpg" alt="배너3"></div>
- <div class="btn-wrap">
-     <div class="btn btn01"></div>
-     <div class="btn btn02"></div>
-     <div class="btn btn03"></div>
- </div>
- <div class="btn-arrow">
- <div class="btn arrow-left"><span class="iconify" data-icon="bi:arrow-left-circle" style="color: #2c2c2c;"></span></div>
- <div class="btn btn05">
-     <div class="play active"><span class="iconify" data-icon="ant-design:play-circle-filled" style="color: #2c2c2c;"></span></div>
-     <div class="pause"><span class="iconify" data-icon="ant-design:pause-circle-outlined" style="color: #2c2c2c;"></span></div>
- </div>
- <div class="btn arrow-right"><span class="iconify" data-icon="bi:arrow-right-circle" style="color: #2c2c2c;"></span></div>
+<!-- 메인 gnd 시작 -->
+<!-- 슬라이더 메인 컨테이너 -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <!-- 슬라이드 -->
+    <div class="swiper-slide slide-1">
+      <div class="img-box">
+        <img src="./img/gnb/20220118_rouge-holic-sheer-matte_mainKV_pc.jpg" alt="">
+      </div>
+    </div>
+    <div class="swiper-slide slide-2">
+      <div class="img-box">
+        <img src="./img/gnb/20211130_sensual-powder-matte_mainKV_pc.jpg" alt="">
+      </div>
+    </div>
+    <div class="swiper-slide slide-3">
+      <div class="img-box">
+        <img src="./img/gnb/20210813_new_main_KV_04_pc.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 슬라이드 페이지 -->
+  <div class="swiper-pagination"></div>
+
+  <!-- 화살표 -->
+  <div class="my-button-prev">
+    <span class="iconify" data-icon="bi:arrow-left-circle" style="color: #2c2c2c;"></span>
+  </div>
+  <div class="swiper-btn-box">
+    <div class="play active">
+      <span class="iconify" data-icon="ant-design:play-circle-filled" style="color: #2c2c2c;"></span>
+    </div>
+    <div class="pause">
+      <span class="iconify" data-icon="ant-design:pause-circle-outlined" style="color: #2c2c2c;"></span>  
+    </div>
+  </div>
+  <div class="my-button-next">
+    <span class="iconify" data-icon="bi:arrow-right-circle" style="color: #2c2c2c;"></span>
+  </div>
+
 </div>
-
-
-</div>
-
-
-
 
 <!-- gnd 끝 -->
 
+
+<!-- 섹션 1 시작-->
+<div class="wrap row">
+  <div class="title-box cell">
+    아모레몰 추천테마
+  </div>
+  <div class="title-box-2 cell">
+    <span>유형별로 세트 상품을 추천해드립니다.</span>
+  </div>
+  <div class="logo-box cell"></div>
+  <div class="nav-box cell-r row">
+    <div class="btn btn-1 cell">실속</div>
+    <div class="btn btn-2 cell">기초</div>
+    <div class="btn btn-3 cell">건강</div>
+  </div>
+</div>
+
+<div class="wrap2 row">
+  
+  <div class="box cell">
+    <div class="img-box">
+      <img src="./img/product-wrap/iope2.jpg" alt="아이오페 기획세트">
+    </div>
+    <div class="txt-box">
+      아이오페 <br>
+      </div>
+       <div class="txt-box-2">  
+      스템||| 2종 기획세트 <br>
+    </div>
+      <div class="txt-box-3">
+       5% <br>
+     </div>
+       <div class="txt-box-4">
+       81,700원
+     </div>
+         <div class="event-box row">
+       <div class="blue blue-box-1 cell">
+         사은품
+       </div>
+       <div class="blue blue-box-2 cell">
+         기프트카드
+       </div>
+     </div>
+     <div class="love-box">
+       리뷰 50 | ♥ 23
+     </div>
+  </div>
+  
+  <div class="box cell">
+    <div class="img-box">
+      <img src="./img/product-wrap/hera.png" alt="헤라 옴므 스페셜">
+    </div>
+    <div class="txt-box">
+      헤라 <br>
+    </div>
+    <div class="txt-box-2"> 
+      옴므 스페셜 기획세트 2종(125ml+110ml) <br>
+    </div>
+    <div class="txt-box-3">
+       5% <br>
+  </div>
+    <div class="txt-box-4">
+       68,000원
+     </div>
+         <div class="event-box row">
+       <div class="blue blue-box-1 cell">
+         사은품
+       </div>
+       <div class="blue blue-box-2 cell">
+         기프트카드
+       </div>
+     </div>
+     <div class="love-box">
+       리뷰 2,140 | ♥ 330
+     </div>
+  </div>
+  
+  <div class="box cell">
+    <div class="img-box">
+      <img src="./img/product-wrap/seol.jpg" alt="설화수 에센셜 컴포트">
+    </div>
+    <div class="txt-box">
+      설화수 
+    </div> 
+       <div class="txt-box-2">   
+      에센셜 컴포트 데일리 루틴(자음 2종) NEW 지함보[한정] <br>
+    </div>
+    
+      <div class="txt-box-3">
+       5% <br>
+  </div>
+         <div class="txt-box-4">
+       126,000원
+     </div>
+         <div class="event-box row">
+       <div class="blue blue-box-1 cell">
+         사은품
+       </div>
+       <div class="blue blue-box-2 cell">
+         기프트카드
+       </div>
+     </div>
+     <div class="love-box">
+       리뷰 309 | ♥ 88
+     </div>
+</div>
+  
+  <div class="box cell">
+    <div class="img-box">
+      <img src="./img/product-wrap/primera1.jpg" alt="프리메라 오가니언스">
+    </div>
+    <div class="txt-box">
+      프리메라  </div>
+      <div class="txt-box-2">
+      오가니언스 2종 세트 
+     </div>
+       <div class="txt-box-3">
+       5% <br>  
+  </div>
+         <div class="txt-box-4">
+       48,000원
+     </div>
+         <div class="event-box row">
+       <div class="blue blue-box-1 cell">
+         사은품
+       </div>
+       <div class="blue blue-box-2 cell">
+         기프트카드
+       </div>
+     </div>
+     <div class="love-box">
+       리뷰 1,999 | ♥ 1800
+     </div>
+</div>
+  
+  
+   <div class="box cell">
+    <div class="img-box">
+      <img src="./img/product-wrap/han.png" alt="한율 채움 탄력">
+    </div>
+    <div class="txt-box">
+      한율 <br>    
+     </div>
+     <div class="txt-box-2">
+      채움 탄력 2종 세트 <br>
+    </div>
+     <div class="txt-box-3">
+       5% <br>
+     </div>
+     <div class="txt-box-4">
+       85,500원
+     </div>
+     <div class="event-box row">
+       <div class="blue blue-box-1 cell">
+         사은품
+       </div>
+       <div class="blue blue-box-2 cell">
+         기프트카드
+       </div>
+     </div>
+     <div class="love-box">
+       리뷰 1,203 | ♥ 453
+     </div>
+  </div>
+</div>
+<!-- 섹션 1 끝-->
+
+<!--section02 시작-->
+<div class="wrap row">
+  <div class="title-box cell">
+    아모레몰 BEST
+  </div>
+  <div class="title-box-2 cell">
+    <span>아모레몰의 가장 인기 있는 제품을 소개합니다.</span>
+  </div>
+</div>
+
+<div class="wrap2 row">
+  
+  <div class="box2 cell">
+    <div class="img-box">
+      <img src="https://ibighit.com/bts/images/bts/profile/member-jin.jpg" alt="">
+       <div class="circle">
+    <span class="iconify" data-icon="akar-icons:plus" style="color: white;"></span>
+    </div>
+      </div>
+    <div class="holder-box row">
+      <div class="txt-box-1">헤라</div>
+      <div class="txt-box-2">블랙 쿠션 SPF34/PA++ (15gx2)</div>
+      <div class="txt-box-3">NEW LAYERLESS MATTE 레이어리스 매트 커버가 초밀착 팟팅되어 무결점 피부 표현이 하루종일 지속되는 쿠션</div>
+      <div class="txt-box-4 cell">15%</div>
+      <div class="txt-box-5 cell">60,000원</div>
+      <div class="txt-box-6 cell-r">51,000원</div>
+      <div class="txt-box-7">리뷰 7,516 | ♥ 4893</div>
+    </div>
+  </div>
+    <div class="box2 cell">
+    <div class="img-box">
+      <img src="https://ibighit.com/bts/images/bts/profile/member-jin.jpg" alt="">
+       <div class="circle">
+    <span class="iconify" data-icon="akar-icons:plus" style="color: white;"></span>
+    </div>
+      </div>
+    <div class="holder-box row">
+      <div class="txt-box-1">헤라</div>
+      <div class="txt-box-2">블랙 쿠션 SPF34/PA++ (15gx2)</div>
+      <div class="txt-box-3">NEW LAYERLESS MATTE 레이어리스 매트 커버가 초밀착 팟팅되어 무결점 피부 표현이 하루종일 지속되는 쿠션</div>
+      <div class="txt-box-4 cell">15%</div>
+      <div class="txt-box-5 cell">60,000원</div>
+      <div class="txt-box-6 cell-r">51,000원</div>
+      <div class="txt-box-7">리뷰 7,516 | ♥ 4893</div>
+    </div>
+  </div>
+    <div class="box2 cell">
+    <div class="img-box">
+      <img src="https://ibighit.com/bts/images/bts/profile/member-jin.jpg" alt="">
+       <div class="circle">
+    <span class="iconify" data-icon="akar-icons:plus" style="color: white;"></span>
+    </div>
+      </div>
+    <div class="holder-box row">
+      <div class="txt-box-1">헤라</div>
+      <div class="txt-box-2">블랙 쿠션 SPF34/PA++ (15gx2)</div>
+      <div class="txt-box-3">NEW LAYERLESS MATTE 레이어리스 매트 커버가 초밀착 팟팅되어 무결점 피부 표현이 하루종일 지속되는 쿠션</div>
+      <div class="txt-box-4 cell">15%</div>
+      <div class="txt-box-5 cell">60,000원</div>
+      <div class="txt-box-6 cell-r">51,000원</div>
+      <div class="txt-box-7">리뷰 7,516 | ♥ 4893</div>
+    </div>
+  </div>
+ </div>     
+<!--section02 끝-->
+
+<!--광고배너 시작-->
+<div class="adv-box">
+  <img src="./img/advertise/아모레 띠배너.jpg" alt="광교아모레">
+</div>
+
+<!--광고배너 끝-->
 </body>
 </html>
